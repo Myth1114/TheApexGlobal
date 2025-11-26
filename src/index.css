@@ -1,0 +1,60 @@
+body {
+  position: relative;
+}
+.Homepage {
+  overflow: hidden;
+}
+.hero-section {
+}
+/* Floating badges default (desktop) */
+.floating-badge-1,
+.floating-badge-2 {
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  max-width: 220px;
+  box-shadow: 0 5px 15px rgba(195, 4, 248, 0.3);
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Desktop floating positions */
+@media (min-width: 992px) {
+  .floating-badge-1,
+  .floating-badge-2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .floating-badge.start-0 {
+    left: -50px;
+  }
+  .floating-badge.end-0 {
+    right: -50px;
+  }
+}
+
+/* Tablet / Mobile: make badges stack under the image */
+@media (max-width: 768px) {
+  .floating-badge-1 {
+    top: 70%;
+  }
+  .floating-badge-2 {
+    top: 90%;
+  }
+
+  .hero-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .floating-badge {
+    width: 70%;
+  }
+}
+[data-aos] {
+  overflow: visible !important;
+}
