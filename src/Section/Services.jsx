@@ -12,9 +12,7 @@ const Services = () => {
           <div className="sub-style">
             <h5 className="sub-title text-primary px-3">Visa Categories</h5>
           </div>
-          <h1 className="display-5 mb-4">
-            Enabling Your Immigration Successfully
-          </h1>
+          <h1 className="display-5 mb-4">Your Immigration Successfully</h1>
           <p className="mb-0">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
             deleniti amet at atque sequi quibusdam cumque itaque repudiandae
