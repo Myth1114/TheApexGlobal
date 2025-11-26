@@ -1,4 +1,4 @@
-export const servicesData = [
+const servicesData = [
   {
     id: 1,
     title: "Job Visa",
@@ -24,3 +24,4 @@ export const servicesData = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum.",
   },
 ];
+export default servicesData;

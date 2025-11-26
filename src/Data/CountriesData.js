@@ -1,4 +1,4 @@
-export const countriesData = [
+const countriesData = [
   {
     id: 1,
     name: "Brazil",
@@ -28,3 +28,4 @@ export const countriesData = [
     delay: "1200",
   },
 ];
+export default countriesData;
