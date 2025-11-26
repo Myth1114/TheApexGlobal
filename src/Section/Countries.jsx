@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { countriesData } from "../data/countriesData";
+import { countriesData } from "../data/countriesData.js";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
