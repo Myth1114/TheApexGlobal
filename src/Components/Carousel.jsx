@@ -127,11 +127,11 @@ const Carousel = () => {
       <section className="hero-section py-5 mt-5 position-relative">
         <div className="container text-center">
           <h1 className="fw-bold display-4 mb-3">
-            Nepal's leading study abroad consultants
+            “Guiding Futures Beyond Borders."
           </h1>
           <p className="lead mb-4">
-            We've assisted over <strong>760,000+ students</strong> in their
-            study abroad journey.
+            We've assisted over <strong>5,000+ students</strong> in their study
+            abroad journey.
           </p>
 
           <div className="d-flex flex-wrap justify-content-center gap-3 mb-5">
@@ -142,10 +142,10 @@ const Carousel = () => {
               UK <i className="bi bi-arrow-right"></i>
             </button>
             <button className="btn btn-secondary border-primary text-primary rounded-pill py-3 px-5 wow fadeInUp">
-              Canada <i className="bi bi-arrow-right"></i>
+              China <i className="bi bi-arrow-right"></i>
             </button>
             <button className="btn btn-secondary border-primary text-primary rounded-pill py-3 px-5 wow fadeInUp">
-              USA <i className="bi bi-arrow-right"></i>
+              Canada <i className="bi bi-arrow-right"></i>
             </button>
             <button className="btn btn-secondary border-primary text-primary rounded-pill py-3 px-5 wow fadeInUp">
               New Zealand <i className="bi bi-arrow-right"></i>

@@ -8,6 +8,12 @@ body {
 .aos-animate {
   transform: translate(0) !important;
 }
+button:focus,
+button:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 /*** Spinner Start ***/
 /*** Spinner ***/
 #spinner {
@@ -885,7 +891,22 @@ body {
 
 /*** Footer Start ***/
 .footer {
-  background: linear-gradient(90deg, #ddcefd, #7b3fff);
+  background: linear-gradient(120deg, #ddcefd, #7b3fff);
+  background-size: 200% 200%;
+  animation: elegantGradient 8s ease infinite;
+  /* background: linear-gradient(90deg, #ddcefd, #7b3fff); */
+}
+
+@keyframes elegantGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .footer .footer-item a {
   line-height: 30px;

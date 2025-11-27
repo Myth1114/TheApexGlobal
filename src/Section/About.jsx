@@ -41,24 +41,27 @@ const About = () => {
             >
               <h5 className="sub-title pe-3">About the company</h5>
               <h1 className="display-5 mb-4">
-                We are Trusted Immigration Consultant Agency.
+                Connecting Bright Minds to World-Class Destinations.
               </h1>
               <p className="mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                architecto consectetur iusto perferendis blanditiis assumenda
-                dignissimos, commodi fuga culpa earum explicabo libero sint est
-                mollitia saepe! Sequi asperiores rerum nemo!
+                The Apex Global Pvt. Ltd. is a trusted international education
+                consultancy dedicated to guiding students toward top global
+                universities through expert counseling, scholarship assistance,
+                and comprehensive admission-to-visa support. We transform
+                academic aspirations into reality with personalized services
+                that ensure a smooth, successful, and confidence-filled study
+                abroad journey.
               </p>
               <div className="row gy-4 align-items-center">
                 <div className="col-12 col-sm-6 d-flex align-items-center">
-                  <i className="fas fa-map-marked-alt fa-3x text-primary"></i>
-                  <h5 className="ms-4">Best Immigration Resources</h5>
+                  <i class="fas fa-university fa-3x text-primary"></i>
+                  <h5 className="ms-4">University Admission</h5>
                 </div>
                 <div className="col-12 col-sm-6 d-flex align-items-center">
                   <i className="fas fa-passport fa-3x text-primary"></i>
-                  <h5 className="ms-4">Return Visas Availabile</h5>
+                  <h5 className="ms-4">Visa Processing</h5>
                 </div>
-                <div className="col-4 col-md-3">
+                {/* <div className="col-4 col-md-3">
                   <div className="bg-light text-center rounded p-3">
                     <div className="mb-2">
                       <i className="fas fa-ticket-alt fa-4x text-primary"></i>
@@ -66,20 +69,23 @@ const About = () => {
                     <h1 className="display-5 fw-bold mb-2">34</h1>
                     <p className="text-muted mb-0">Years of Experience</p>
                   </div>
-                </div>
-                <div className="col-8 col-md-9">
+                </div> */}
+                <div className="col-12 col-md-12">
                   <div className="mb-5">
                     <p className="text-primary h6 mb-3">
                       <i className="fa fa-check-circle text-primary me-2"></i>{" "}
-                      Offer 100 % Genuine Assistance
+                      Course selection, application processing, documentation,
+                      scholarships, and visa guidance.
                     </p>
                     <p className="text-primary h6 mb-3">
                       <i className="fa fa-check-circle text-primary me-2"></i>{" "}
-                      It’s Faster & Reliable Execution
+                      Comprehensive training for IELTS, PTE, and HSK with
+                      score-focused strategies.
                     </p>
                     <p className="text-primary h6 mb-3">
                       <i className="fa fa-check-circle text-primary me-2"></i>{" "}
-                      Accurate & Expert Advice
+                      International internships in hospitality, corporate
+                      sectors, and more.
                     </p>
                   </div>
                   <div className="d-flex flex-wrap">
@@ -103,7 +109,7 @@ const About = () => {
                     <div className="d-flex flex-column justify-content-center">
                       <span className="text-primary">Have any questions?</span>
                       <span className="text-primary fw-bold fs-5">
-                        Free: +0123 456 7890
+                        Call: +977 9802390001
                       </span>
                     </div>
                   </div>

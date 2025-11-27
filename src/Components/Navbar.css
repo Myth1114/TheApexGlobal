@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
   padding: 15px 30px;
   background-color: #ffffff; /* Dark background */
   color: #000000;
@@ -11,10 +12,35 @@
   top: 0;
   z-index: 1000; /* Ensures it stays above other content */
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: all ease-in 0.3s;
 }
 .Navbar.scrolled {
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
   background: linear-gradient(90deg, #ddcefd, #7b3fff);
+}
+
+@keyframes auroraMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes elegantGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .Navbar-logo a {
   text-decoration: none;
@@ -36,6 +62,9 @@
   font-weight: 600;
   transition: color 0.3s;
 }
+/* .Navbar-links-desktop a:hover {
+  
+} */
 
 .Navbar-links-desktop a:hover {
   color: var(--bs-secondary); /* Highlight on hover */
@@ -77,20 +106,19 @@
 
 /* --- Mobile Menu (The Sliding Panel) --- */
 .Navbar-menu-mobile {
-  /* Initial state: off-screen to the left */
   transform: translateX(-100%);
   position: fixed;
-  top: 0;
+  top: 0; /* instead of 0 */
   left: 0;
-  height: 100vh;
-  width: 250px; /* Width of the menu */
-  background-color: #ffffff; /* Semi-transparent dark background */
+  height: 100%; /* prevent covering navbar */
+  width: 250px;
+  background-color: #ffffff;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.4s ease-in-out; /* Smooth slide-in animation */
-  z-index: 1001; /* Above content, below toggle */
+  transition: transform 0.4s ease-in-out;
+  z-index: 1001;
   display: flex;
   flex-direction: column;
-  padding-top: 80px; /* Space for the fixed main Navbar area */
+  padding-top: 20px; /* Reduce from 80px */
 }
 
 /* State when menu is open */
@@ -105,15 +133,18 @@
 }
 
 .menu-content a {
-  color: #000000;
-  text-decoration: none;
   padding: 15px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  transition: background-color 0.3s;
   font-size: 1.2rem;
+  color: var(--bs-dark);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all ease-in-out 0.5s;
 }
 
 .menu-content a:hover {
+  letter-spacing: 2px;
+  transition: all ease-in-out 0.5s;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
