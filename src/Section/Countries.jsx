@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import countriesData from "../data/countriesData.js";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Countries = () => {
   const [visibleCount, setVisibleCount] = useState(4); // show first 4
@@ -7,7 +9,9 @@ const Countries = () => {
   const showMore = () => {
     setVisibleCount((prev) => prev + 4); // load next 4 each click
   };
-
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="container-fluid country overflow-hidden py-5">
       <div className="container">
