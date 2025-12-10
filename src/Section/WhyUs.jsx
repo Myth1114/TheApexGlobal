@@ -13,13 +13,12 @@ const WhyUs = () => {
               <h5 className="sub-title text-primary px-3">Why Choose Us</h5>
             </div>
             <h1 className="display-5 mb-4">
-              Offer Tailor Made Services That Our Client Requires
+              “Your Best Choice for Global Education Support”
             </h1>
             <p className="mb-0">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-              deleniti amet at atque sequi quibusdam cumque itaque repudiandae
-              temporibus, eius nam mollitia voluptas maxime veniam
-              necessitatibus saepe in ab? Repellat!
+              We provide reliable, personalized, and end-to-end guidance to make
+              your study-abroad journey smooth, stress-free, and
+              successful—ensuring you receive the right support at every step.
             </p>
           </div>
           <div className="row g-4 justify-content-center text-center">
@@ -29,13 +28,13 @@ const WhyUs = () => {
             >
               <div className="feature-item text-center p-4">
                 <div className="feature-icon p-3 mb-4">
-                  <i className="fas fa-dollar-sign fa-4x text-primary"></i>
+                  <i className="fas fa-university fa-4x text-primary"></i>
                 </div>
                 <div className="feature-content d-flex flex-column">
-                  <h5 className="mb-3">Cost-Effective</h5>
+                  <h5 className="mb-3">University Selection</h5>
                   <p className="mb-3">
-                    Dolor, sit amet consectetur adipisicing elit. Soluta
-                    inventore cum accusamus,
+                    Personalized course and university selection tailored to
+                    your goals.
                   </p>
                   <a
                     className="btn btn-secondary border-primary text-primary rounded-pill py-3 px-5"
@@ -52,13 +51,13 @@ const WhyUs = () => {
             >
               <div className="feature-item text-center p-4">
                 <div className="feature-icon p-3 mb-4">
-                  <i className="fab fa-cc-visa fa-4x text-primary"></i>
+                  <i className="fas fa-dollar-sign fa-4x text-primary"></i>
                 </div>
                 <div className="feature-content d-flex flex-column">
-                  <h5 className="mb-3">Visa Assistance</h5>
+                  <h5 className="mb-3">Scholarship Guidance</h5>
                   <p className="mb-3">
-                    Dolor, sit amet consectetur adipisicing elit. Soluta
-                    inventore cum accusamus,
+                    Dedicated support to help you secure the best financial aid
+                    opportunities.
                   </p>
                   <a
                     className="btn btn-secondary border-primary text-primary rounded-pill py-3 px-5"
@@ -78,10 +77,32 @@ const WhyUs = () => {
                   <i className="fas fa-atlas fa-4x text-primary"></i>
                 </div>
                 <div className="feature-content d-flex flex-column">
-                  <h5 className="mb-3">Faster Processing</h5>
+                  <h5 className="mb-3">Documentation Assistance</h5>
                   <p className="mb-3">
-                    Dolor, sit amet consectetur adipisicing elit. Soluta
-                    inventore cum accusamus,
+                    Professional preparation and verification of all required
+                    documents.
+                  </p>
+                  <a
+                    className="btn btn-secondary border-primary text-primary rounded-pill py-3 px-5"
+                    href="#"
+                  >
+                    Read More<i className="fas fa-arrow-right ms-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+              data-wow-delay="0.7s"
+            >
+              <div className="feature-item text-center p-4">
+                <div className="feature-icon p-3 mb-4">
+                  <i className="fab fa-cc-visa fa-4x text-primary"></i>
+                </div>
+                <div className="feature-content d-flex flex-column">
+                  <h5 className="mb-3">Visa Application Support</h5>
+                  <p className="mb-3">
+                    End-to-end guidance for a successful visa process.
                   </p>
                   <a
                     className="btn btn-secondary border-primary text-primary rounded-pill py-3 px-5"
@@ -101,10 +122,80 @@ const WhyUs = () => {
                   <i className="fas fa-users fa-4x text-primary"></i>
                 </div>
                 <div className="feature-content d-flex flex-column">
-                  <h5 className="mb-3">Direct Interviews</h5>
+                  <h5 className="mb-3">Test Preparation Support</h5>
                   <p className="mb-3">
-                    Dolor, sit amet consectetur adipisicing elit. Soluta
-                    inventore cum accusamus,
+                    Coaching for IELTS, PTE, and HSK to help you achieve
+                    required scores.
+                  </p>
+                  <a
+                    className="btn btn-secondary border-primary text-primary rounded-pill py-3 px-5"
+                    href="#"
+                  >
+                    Read More<i className="fas fa-arrow-right ms-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+              data-wow-delay="0.7s"
+            >
+              <div className="feature-item text-center p-4">
+                <div className="feature-icon p-3 mb-4">
+                  <i className="fas fa-street-view fa-4x text-primary"></i>
+                </div>
+                <div className="feature-content d-flex flex-column">
+                  <h5 className="mb-3">Transparent Counseling</h5>
+                  <p className="mb-3">
+                    Honest, data-driven advice to help you make confident
+                    decisions.
+                  </p>
+                  <a
+                    className="btn btn-secondary border-primary text-primary rounded-pill py-3 px-5"
+                    href="#"
+                  >
+                    Read More<i className="fas fa-arrow-right ms-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+              data-wow-delay="0.7s"
+            >
+              <div className="feature-item text-center p-4">
+                <div className="feature-icon p-3 mb-4">
+                  <i className="fas fa-users fa-4x text-primary"></i>
+                </div>
+                <div className="feature-content d-flex flex-column">
+                  <h5 className="mb-3">End-to-End Admission Handling</h5>
+                  <p className="mb-3">
+                    Smooth management of the entire application process.
+                  </p>
+                  <a
+                    className="btn btn-secondary border-primary text-primary rounded-pill py-3 px-5"
+                    href="#"
+                  >
+                    Read More<i className="fas fa-arrow-right ms-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+              data-wow-delay="0.7s"
+            >
+              <div className="feature-item text-center p-4">
+                <div className="feature-icon p-3 mb-4">
+                  <i className="fas fa-plane fa-4x text-primary"></i>
+                </div>
+                <div className="feature-content d-flex flex-column">
+                  <h5 className="mb-3">
+                    Pre-Departure & Post-Arrival Services
+                  </h5>
+                  <p className="mb-3">
+                    Cultural briefing, travel guidance, accommodation support,
+                    and local orientation.
                   </p>
                   <a
                     className="btn btn-secondary border-primary text-primary rounded-pill py-3 px-5"

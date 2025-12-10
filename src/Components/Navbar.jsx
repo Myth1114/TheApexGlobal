@@ -6,8 +6,19 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
+  // Desktop dropdown
+  const [desktopDropdownOpen, setDesktopDropdownOpen] = useState(false);
+
+  // Mobile dropdown
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+
   const toggleMenu = () => setIsOpen(!isOpen);
-  const closeMenu = () => setIsOpen(false);
+  const closeMenu = () => {
+    setIsOpen(false);
+    setMobileDropdownOpen(false);
+  };
+
+  const toggleMobileDropdown = () => setMobileDropdownOpen(!mobileDropdownOpen);
 
   useEffect(() => {
     if (isOpen) {
@@ -38,13 +49,50 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* Desktop Links */}
+      {/* DESKTOP LINKS */}
       <div className="Navbar-links-desktop">
         <Link to="/" onClick={closeMenu}>
           Home
         </Link>
         <Link to="/about" onClick={closeMenu}>
           About
+        </Link>
+
+        {/* Desktop Dropdown */}
+        <div
+          className="Navbar-dropdown"
+          onMouseEnter={() => setDesktopDropdownOpen(true)}
+          onMouseLeave={() => setDesktopDropdownOpen(false)}
+        >
+          <span className="Navbar-dropdown-title">Study Abroad ▾</span>
+
+          <div
+            className={`Navbar-dropdown-menu ${
+              desktopDropdownOpen ? "show" : ""
+            }`}
+          >
+            <Link className="desktopMenuA" to="/uk" onClick={closeMenu}>
+              Australia
+            </Link>
+            <Link className="desktopMenuA" to="/canada" onClick={closeMenu}>
+              UK
+            </Link>
+            <Link className="desktopMenuA" to="/usa" onClick={closeMenu}>
+              China
+            </Link>
+            <Link className="desktopMenuA" to="/italy" onClick={closeMenu}>
+              Canada
+            </Link>
+            <Link className="desktopMenuA" to="/australia" onClick={closeMenu}>
+              New Zealand
+            </Link>
+          </div>
+        </div>
+        <Link to="/services" onClick={closeMenu}>
+          BHM
+        </Link>
+        <Link to="/services" onClick={closeMenu}>
+          DHM
         </Link>
         <Link to="/services" onClick={closeMenu}>
           Services
@@ -54,27 +102,60 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* Hamburger Icon */}
+      {/* HAMBURGER ICON (Mobile Only) */}
       <div className="Navbar-toggle" onClick={toggleMenu}>
         <div className={isOpen ? "line line-open-1" : "line"}></div>
         <div className={isOpen ? "line line-open-2" : "line"}></div>
         <div className={isOpen ? "line line-open-3" : "line"}></div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* MOBILE MENU */}
       <div className={`Navbar-menu-mobile ${isOpen ? "open" : ""}`}>
         <div className="menu-content">
+          {/* Logo inside mobile menu */}
           <div className="Navbar-logo">
             <Link to="/" onClick={closeMenu}>
-              <img src="/images/logo-4.png" />
+              <img src="/images/logo-4.png" alt="logo" />
             </Link>
           </div>
+
           <Link to="/" onClick={closeMenu}>
             Home
           </Link>
           <Link to="/about" onClick={closeMenu}>
             About
           </Link>
+
+          {/* MOBILE DROPDOWN */}
+          <div
+            className="Navbar-dropdown-mobile"
+            onClick={toggleMobileDropdown}
+          >
+            <span className="Navbar-dropdown-title-mobile">Study Abroad ▾</span>
+
+            <div
+              className={`Navbar-dropdown-menu-mobile ${
+                mobileDropdownOpen ? "open" : ""
+              }`}
+            >
+              <Link className="mobileMenuA" to="/uk" onClick={closeMenu}>
+                Australia
+              </Link>
+              <Link className="mobileMenuA" to="/canada" onClick={closeMenu}>
+                UK
+              </Link>
+              <Link className="mobileMenuA" to="/usa" onClick={closeMenu}>
+                China
+              </Link>
+              <Link className="mobileMenuA" to="/italy" onClick={closeMenu}>
+                Canada
+              </Link>
+              <Link className="mobileMenuA" to="/australia" onClick={closeMenu}>
+                New Zealand
+              </Link>
+            </div>
+          </div>
+
           <Link to="/services" onClick={closeMenu}>
             Services
           </Link>
@@ -84,7 +165,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Blur Overlay */}
+      {/* OVERLAY */}
       <div
         className={`Navbar-overlay ${isOpen ? "open" : ""}`}
         onClick={closeMenu}

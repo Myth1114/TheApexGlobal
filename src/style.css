@@ -874,7 +874,11 @@ button:focus-visible {
 .contact .office .office-item:hover .office-img img {
   transform: scale(1.3);
 }
-
+.office-content h5 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .contact .office .office-item .office-content a.text-secondary,
 .contact .office .office-item .office-content a.text-muted {
   transition: 0.5s;

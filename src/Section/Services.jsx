@@ -10,13 +10,19 @@ const Services = () => {
           data-wow-delay="0.1s"
         >
           <div className="sub-style">
-            <h5 className="sub-title text-primary px-3">Visa Categories</h5>
+            <h5 className="sub-title text-primary px-3">
+              Student Visa Support
+            </h5>
           </div>
-          <h1 className="display-5 mb-4">Your Immigration Successfully</h1>
+          <h1 className="display-5 mb-4">
+            “Expert Visa Support for All Study Destinations”
+          </h1>
           <p className="mb-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            deleniti amet at atque sequi quibusdam cumque itaque repudiandae
-            temporibus.
+            We provide expert, country-specific student visa guidance to ensure
+            your application is accurate, complete, and approved on time. From
+            documentation to interview preparation, our team supports you at
+            every step—making your journey to your chosen study destination
+            seamless and stress-free.
           </p>
         </div>
 
@@ -39,8 +45,8 @@ const Services = () => {
 
                   <div className="service-title">
                     <div className="service-title-name">
-                      <div className="bg-primary text-center rounded p-3 mx-5 mb-4">
-                        <a className="h4 text-white mb-0">{service.title}</a>
+                      <div className="bg-primary text-center rounded p-2 mx-5 mb-4 mt-1">
+                        <a className="h5 text-white mb-0">{service.title}</a>
                       </div>
 
                       <a className="btn btn-secondary border-primary text-primary rounded-pill py-3 px-5">
