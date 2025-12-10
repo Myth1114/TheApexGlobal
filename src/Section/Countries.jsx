@@ -7,10 +7,20 @@ const Countries = () => {
   const [visibleCount, setVisibleCount] = useState(4); // show first 4
 
   const showMore = () => {
-    setVisibleCount((prev) => prev + 4); // load next 4 each click
+    setVisibleCount((prev) => {
+      const newCount = prev + 4;
+
+      // wait for React to render new items, then refresh AOS
+      setTimeout(() => {
+        AOS.refreshHard();
+      }, 100);
+
+      return newCount;
+    });
   };
+
   useEffect(() => {
-    AOS.init();
+    AOS.init({ duration: 600 });
   }, []);
   return (
     <div className="container-fluid country overflow-hidden py-5">
