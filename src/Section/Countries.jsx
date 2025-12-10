@@ -1,13 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import countriesData from "../data/countriesData.js";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 const Countries = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  const [visibleCount, setVisibleCount] = useState(4); // show first 4
+
+  const showMore = () => {
+    setVisibleCount((prev) => prev + 4); // load next 4 each click
+  };
+
   return (
     <div className="container-fluid country overflow-hidden py-5">
       <div className="container">
@@ -32,10 +32,10 @@ const Countries = () => {
         </div>
 
         <div className="row g-4 text-center">
-          {countriesData.map((country) => (
+          {countriesData.slice(0, visibleCount).map((country, index) => (
             <div
-              key={country.id}
-              className="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp"
+              key={index}
+              className="col-lg-6 col-xl-3 mb-5 mb-xl-0"
               data-aos="fade-up"
               data-aos-duration={country.delay}
             >
@@ -63,15 +63,16 @@ const Countries = () => {
             </div>
           ))}
 
-          <div className="col-12">
-            <a
-              className="btn btn-secondary border-primary text-primary rounded-pill py-3 px-5"
-              data-wow-delay="0.1s"
-              href="#"
-            >
-              More Countries
-            </a>
-          </div>
+          {visibleCount < countriesData.length && (
+            <div className="text-center mt-4">
+              <button
+                className="btn btn-secondary border-primary text-primary rounded-pill py-3 px-5"
+                onClick={showMore}
+              >
+                Show More
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>

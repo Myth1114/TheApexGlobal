@@ -1,0 +1,58 @@
+const hotelsData = [
+  {
+    id: 1,
+    name: "New Century Grand Hotel",
+    city: "Hangzhou, China",
+    rating: "5 Star Hotel",
+    address: "818 shixinzhong Road, intersection with Jincheng Road",
+    image: "/images/hotel-1.jpg",
+    delay: "300",
+  },
+  {
+    id: 2,
+    name: "Aloha Oceanfront Suite Resort",
+    city: "Lingshui, China",
+    rating: "5 Star Hotel",
+    address: "8 Qingshuiwan Avenue, Yingzhou town, Lingshui, China.",
+    image: "/images/hotel-2.jpg",
+    delay: "600",
+  },
+  {
+    id: 3,
+    name: "Mandarin Oriental",
+    city: "Sanya, China",
+    rating: "5 Star Hotel",
+    address: "No. 12 Yuhai Road, Da Dong Hai District, 572000 Sanya, China",
+    image: "/images/hotel-3.jpg",
+    delay: "600",
+  },
+  {
+    id: 4,
+    name: "Four Seasons Hotel",
+    city: "Guangzhou, China",
+    rating: "5 Star Hotel",
+    address: "5 Zhujiang West Road, Zhujiang New Town, Tianhe District.",
+    image: "/images/hotel-4.jpg",
+    delay: "600",
+  },
+  {
+    id: 5,
+    name: "Four Seasons Hotel",
+    city: "Guangzhou, China",
+    rating: "5 Star Hotel",
+    address: "5 Zhujiang West Road, Zhujiang New Town, Tianhe District.",
+    image: "/images/hotel-4.jpg",
+    delay: "600",
+  },
+  {
+    id: 6,
+    name: "Four Seasons Hotel",
+    city: "Guangzhou, China",
+    rating: "5 Star Hotel",
+    address: "5 Zhujiang West Road, Zhujiang New Town, Tianhe District.",
+    image: "/images/hotel-4.jpg",
+    delay: "600",
+  },
+];
+
+export default hotelsData;
