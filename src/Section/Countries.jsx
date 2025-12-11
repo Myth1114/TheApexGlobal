@@ -25,14 +25,11 @@ const Countries = () => {
           <div className="sub-style">
             <h5 className="sub-title text-primary px-3">COUNTRIES WE OFFER</h5>
           </div>
-          <h1 className="display-5 mb-4">
-            Immigration & visa services following Countries
-          </h1>
+          <h1 className="display-5 mb-4">Explore! Apply! Fly!</h1>
           <p className="mb-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            deleniti amet at atque sequi quibusdam cumque itaque repudiandae
-            temporibus, eius nam mollitia voluptas maxime veniam necessitatibus
-            saepe in ab? Repellat!
+            Discover top study destinations across the world with trusted
+            guidance for admissions, scholarships, documentation, and visa
+            support—making your global education journey smooth and successful.
           </p>
         </div>
 
