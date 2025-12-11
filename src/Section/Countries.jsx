@@ -9,28 +9,9 @@ const Countries = () => {
   const showMore = () => {
     setVisibleCount((prev) => {
       const newCount = prev + 4;
-
-      // wait for React to render new items, then refresh AOS
-      setTimeout(() => {
-        AOS.refreshHard();
-      }, 100);
-
       return newCount;
     });
   };
-
-  useEffect(() => {
-    // Delay ensures DOM fully loaded in production
-    setTimeout(() => {
-      AOS.init({
-        duration: 600,
-        once: false,
-        mirror: true,
-      });
-
-      AOS.refreshHard();
-    }, 300);
-  }, []);
 
   return (
     <div className="container-fluid country overflow-hidden py-5">
@@ -71,7 +52,6 @@ const Countries = () => {
                     alt={country.name}
                   />
                 </div>
-
                 <div className="country-flag">
                   <img
                     src={country.flag}

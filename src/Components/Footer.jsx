@@ -12,31 +12,39 @@ const Footer = () => {
             <div className="footer-item d-flex flex-column">
               <h4 className="text-primary mb-4">Contact Info</h4>
               <a href="">
-                <i className="fa fa-map-marker-alt me-2"></i> 123 Street, New
-                York, USA
+                <i className="fa fa-map-marker-alt me-2"></i> Baluwatar,
+                Kathmandu, 44600
               </a>
               <a href="">
-                <i className="fas fa-envelope me-2"></i> info@example.com
+                <i className="fas fa-envelope me-2"></i> globaltheapex@gmail.com
               </a>
               <a href="">
-                <i className="fas fa-phone me-2"></i> +012 345 67890
+                <i className="fas fa-phone me-2"></i> +977 9802390001
               </a>
               <a href="" className="mb-3">
-                <i className="fas fa-print me-2"></i> +012 345 67890
+                <i className="fas fa-phone me-2"></i> +977 9802390002
               </a>
               <div className="d-flex align-items-center">
                 <i className="fas fa-share fa-2x text-secondary me-2"></i>
-                <a className="btn mx-1" href="">
+                <a
+                  className="btn mx-1"
+                  href="https://www.facebook.com/profile.php?id=61582785184712"
+                  target="_blank"
+                >
                   <i className="fab fa-facebook-f"></i>
                 </a>
                 <a className="btn mx-1" href="">
-                  <i className="fab fa-twitter"></i>
+                  <i className="fab fa-tiktok"></i>
                 </a>
-                <a className="btn mx-1" href="">
+                <a
+                  className="btn mx-1"
+                  href="https://www.instagram.com/theapexglobal/"
+                  target="_blank"
+                >
                   <i className="fab fa-instagram"></i>
                 </a>
-                <a className="btn mx-1" href="">
-                  <i className="fab fa-linkedin-in"></i>
+                <a className="btn mx-1" href="https://wa.me/+9779802390001">
+                  <i className="fab fa-whatsapp"></i>
                 </a>
               </div>
             </div>
@@ -45,16 +53,16 @@ const Footer = () => {
             <div className="footer-item d-flex flex-column">
               <h4 className="text-primary mb-4">Opening Time</h4>
               <div className="mb-3">
-                <h6 className="text-muted mb-0">Mon - Friday:</h6>
-                <p className="text-white mb-0">09.00 am to 07.00 pm</p>
+                <h6 className="text-muted mb-0">Sun - Friday:</h6>
+                <p className="text-white mb-0">09.00 am to 06.00 pm</p>
               </div>
-              <div className="mb-3">
-                <h6 className="text-muted mb-0">Satday:</h6>
+              {/* <div className="mb-3">
+                <h6 className="text-muted mb-0">Saturday:</h6>
                 <p className="text-white mb-0">10.00 am to 05.00 pm</p>
-              </div>
+              </div> */}
               <div className="mb-3">
                 <h6 className="text-muted mb-0">Vacation:</h6>
-                <p className="text-white mb-0">All Sunday is our vacation</p>
+                <p className="text-white mb-0">All Saturday is our vacation</p>
               </div>
             </div>
           </div>
@@ -62,22 +70,25 @@ const Footer = () => {
             <div className="footer-item d-flex flex-column">
               <h4 className="text-primary mb-4">Our Services</h4>
               <a href="#" className="">
-                <i className="fas fa-angle-right me-2"></i> Business
+                <i className="fas fa-angle-right me-2"></i> University Selection
               </a>
               <a href="#" className="">
-                <i className="fas fa-angle-right me-2"></i> Evaluation
+                <i className="fas fa-angle-right me-2"></i> Scholarship Guidance
               </a>
               <a href="#" className="">
-                <i className="fas fa-angle-right me-2"></i> Migrate
+                <i className="fas fa-angle-right me-2"></i> Documentation
+                Assistance
               </a>
               <a href="#" className="">
-                <i className="fas fa-angle-right me-2"></i> Study
+                <i className="fas fa-angle-right me-2"></i> Visa Application
+                Support
               </a>
               <a href="#" className="">
                 <i className="fas fa-angle-right me-2"></i> Counselling
               </a>
               <a href="#" className="">
-                <i className="fas fa-angle-right me-2"></i> Work / Career
+                <i className="fas fa-angle-right me-2"></i> Pre-Departure &
+                Post-Arrival Services
               </a>
             </div>
           </div>
