@@ -20,8 +20,18 @@ const Countries = () => {
   };
 
   useEffect(() => {
-    AOS.init({ duration: 600 });
+    // Delay ensures DOM fully loaded in production
+    setTimeout(() => {
+      AOS.init({
+        duration: 600,
+        once: false,
+        mirror: true,
+      });
+
+      AOS.refreshHard();
+    }, 300);
   }, []);
+
   return (
     <div className="container-fluid country overflow-hidden py-5">
       <div className="container">
