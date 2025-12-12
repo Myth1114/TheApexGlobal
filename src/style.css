@@ -1,7 +1,10 @@
 [data-aos] {
   overflow: hidden;
 }
-html,
+html {
+  scroll-behavior: auto !important;
+  overflow-x: hidden;
+}
 body {
   overflow-x: hidden;
 }
