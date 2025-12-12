@@ -17,7 +17,12 @@ body {
   font-size: 14px;
   text-align: center;
 }
-
+.AboutPage {
+  overflow: hidden;
+}
+.App {
+  padding-top: 4rem;
+}
 /* Desktop floating positions */
 @media (min-width: 992px) {
   .floating-badge-1,

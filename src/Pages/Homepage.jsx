@@ -11,11 +11,12 @@ const Homepage = () => {
   return (
     <div className="Homepage">
       <Carousel />
+      <Countries />
       <About />
       <Counterfacts />
       <Services />
       <WhyUs />
-      <Countries />
+
       <BhmDhm />
     </div>
   );

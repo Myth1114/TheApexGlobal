@@ -45,7 +45,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className="Navbar-logo">
         <Link to="/" onClick={closeMenu}>
-          The Apex Global
+          <img src="/images/ApexLogo.png" alt="logo" />
         </Link>
       </div>
 
@@ -54,7 +54,7 @@ const Navbar = () => {
         <Link to="/" onClick={closeMenu}>
           Home
         </Link>
-        <Link to="/about" onClick={closeMenu}>
+        <Link to="/aboutpage" onClick={closeMenu}>
           About
         </Link>
 
@@ -115,14 +115,14 @@ const Navbar = () => {
           {/* Logo inside mobile menu */}
           <div className="Navbar-logo">
             <Link to="/" onClick={closeMenu}>
-              <img src="/images/logo-4.png" alt="logo" />
+              <img src="/images/ApexLogo.png" alt="logo" />
             </Link>
           </div>
 
           <Link to="/" onClick={closeMenu}>
             Home
           </Link>
-          <Link to="/about" onClick={closeMenu}>
+          <Link to="/aboutpage" onClick={closeMenu}>
             About
           </Link>
 

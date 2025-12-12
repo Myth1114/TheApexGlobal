@@ -14,7 +14,7 @@ const About = () => {
             <div
               className="col-xl-5"
               data-aos="fade-right"
-              data-aos-offset="300"
+              // data-aos-offset="300"
             >
               <div className="bg-light rounded">
                 <img
@@ -37,7 +37,7 @@ const About = () => {
             <div
               className="col-xl-7"
               data-aos="fade-left"
-              data-aos-offset="300"
+              // data-aos-offset="300"
             >
               <h5 className="sub-title pe-3">About the company</h5>
               <h1 className="display-5 mb-4">

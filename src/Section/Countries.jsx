@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import countriesData from "../data/countriesData.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -41,26 +42,31 @@ const Countries = () => {
               data-aos="fade-up"
               data-aos-duration={country.delay}
             >
-              <div className="country-item">
-                <div className="rounded overflow-hidden">
-                  <img
-                    src={country.image}
-                    className="img-fluid w-100 rounded"
-                    alt={country.name}
-                  />
-                </div>
-                <div className="country-flag">
-                  <img
-                    src={country.flag}
-                    className="img-fluid rounded-circle"
-                    alt={country.name}
-                  />
-                </div>
+              <Link
+                to={`/country/${country.slug}`}
+                className="country-item-link"
+              >
+                <div className="country-item">
+                  <div className="rounded overflow-hidden">
+                    <img
+                      src={country.image}
+                      className="img-fluid w-100 rounded"
+                      alt={country.name}
+                    />
+                  </div>
+                  <div className="country-flag">
+                    <img
+                      src={country.flag}
+                      className="img-fluid rounded-circle"
+                      alt={country.name}
+                    />
+                  </div>
 
-                <div className="country-name">
-                  <a className="text-white fs-4">{country.name}</a>
+                  <div className="country-name">
+                    <span className="text-white fs-4">{country.name}</span>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           ))}
 

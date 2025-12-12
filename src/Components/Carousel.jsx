@@ -3,7 +3,7 @@ import React from "react";
 const Carousel = () => {
   return (
     <div>
-      <section className="hero-section py-5 mt-5 position-relative">
+      <section className="hero-section mt-5 position-relative">
         <div
           className="container text-center"
           data-aos="fade-up"
